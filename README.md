@@ -18,5 +18,11 @@ cd cert-generator
 bash generate.sh
 ```
 
+## Inspect
+```bash
+openssl req -text -noout -in certs/server-req.pem
+openssl x509 -text -noout -in certs/server-cert.pem
+```
+
 Resources:  
 - [IBM Self Signed Cert Configuration](https://www.ibm.com/docs/en/ztpf/1.1.0.15?topic=gssccr-configuration-file-generating-self-signed-certificates-certificate-requests)
