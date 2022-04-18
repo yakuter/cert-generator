@@ -4,6 +4,7 @@ echo "Generating certificates for '$dnsname'"
 
 sed "s/@dnsname/$dnsname/g" ca-template.conf > ca.conf
 sed "s/@dnsname/$dnsname/g" cert-template.conf > cert.conf
+sed "s/@dnsname/$dnsname/g" csr-template.conf > csr.conf
 
 mkdir certs
 
@@ -35,3 +36,4 @@ openssl x509 -req -days 365000 -set_serial 01 -sha256 \
 
 rm ca.conf
 rm cert.conf
+rm csr.conf
