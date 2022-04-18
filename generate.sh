@@ -30,3 +30,6 @@ openssl x509 -req -days 365000 -set_serial 01 -sha256 \
    -CA ca-cert.pem \
    -CAkey ca-key.pem \
    -extfile cert.conf
+
+sed -i "" "s/$dnsname/@dnsname/g" ca.conf
+sed -i "" "s/$dnsname/@dnsname/g" cert.conf
