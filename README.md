@@ -17,3 +17,6 @@ git clone github.com/yakuter/cert-generator
 cd cert-generator
 bash generate.sh
 ```
+
+Resources:  
+- [IBM Self Signed Cert Configuration](https://www.ibm.com/docs/en/ztpf/1.1.0.15?topic=gssccr-configuration-file-generating-self-signed-certificates-certificate-requests)
